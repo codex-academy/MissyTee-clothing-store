@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!-- <script src="index.js"></script> -->
+	<link rel="stylesheet" href="style.css">
+	<style>
+
+		body {
+			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		}
+
+		img {
+			display: inline-block;
+		}
+
+		.caption {
+			display: block;
+			text-align: center;
+		}
+
+		.garments {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.garment {
+			flex : 1;
+			background-color: beige;
+			border: 1px solid greenyellow;
+			padding: 1em;
+			margin: 0.25em;
+			border-radius: 0.5em;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Missy Tee - clothing store</h1>
+
+	<div class="garments" >
+		<div class="garment" >
+			<img data-id="1" data-price="275.00" src="/images/womans-128x128-455136.png" alt="">
+			<span class="caption">Long sleeve jacket
+				<strong>R275.00</strong>
+			</span>
+		</div>
+	
+		<div class="garment">
+			<img data-id="2" src="/images/womans-128x128-455139.png" alt="">
+			<span class="caption">Golf shirt <strong>R179.00</strong></span>
+		</div>
+
+		<div class="garment">
+			<img data-id="2" src="/images/womans-128x128-455140.png" alt="">
+			<span class="caption">Party dress <strong>R479.00</strong></span>
+		</div>
+		<div class="garment">
+			<img data-id="2" src="/images/womans-128x128-455142.png" alt="">
+			<span class="caption">Jeans <strong>R365.00</strong></span>
+		</div>
+		<div class="garment">
+			<img data-id="2" src="/images/womans-128x128-455143.png" alt="">
+			<span class="caption">Leggings/Tights <strong>R249.00</strong></span>
+		</div>
+		<div class="garment">
+			<img data-id="2" src="/images/womans-128x128-455144.png" alt="">
+			<span class="caption">Formal long sleeve<strong>R349.00</strong></span>
+		</div>
+		<div class="garment">
+			<img data-id="2" src="/images/womans-128x128-455145.png" alt="">
+			<span class="caption">Exercise shirt<strong>R199.00</strong></span>
+		</div>
+		<div class="garment">
+			<img data-id="2" src="/images/womans-128x128-455146.png" alt="">
+			<span class="caption">Fun summer dress<strong>R329.00</strong></span>
+		</div>
+		<div class="garment">
+			<img data-id="2" src="/images/womans-128x128-455147.png" alt="">
+			<span class="caption">Fun summer dress<strong>R239.00</strong></span>
+		</div>
+	</div>
+
+</body>
+<script src="index.js"></script>
+</html>

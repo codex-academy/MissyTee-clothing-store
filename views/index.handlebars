@@ -1,0 +1,40 @@
+<h1>Garments</h1>
+
+<div class="garments" >
+	{{#each garments}}
+	<div class="garment">
+		<img src="/images/{{img}}" alt="">
+
+		<form action="/garment/" method="post">
+			<input type="hidden" name="img" value="{{img}}" >
+			<div class="field" >
+				<label for="">Description</label>
+				<input type="text" name="description" value="{{description}}" >
+			</div>
+			<div class="field">
+				<label for="">Price</label>
+				<input type="number" name="price" step = "0.01" value="{{price}}" >
+			</div>
+
+
+			<div class="field">
+				<label for="">Gender</label>
+				<div>
+					<input type="text" name="gender" value="{{gender}}" >
+				</div>
+			</div>
+			<div class="field">
+				<label for="">Season</label>
+				<div>
+					<input type="text" name="season" value="{{season}}" >
+				</div>
+			</div>
+			<div class="field">
+				<input type="submit" >
+			</div>
+		</form>
+
+
+	</div>
+{{/each}}
+</div>
